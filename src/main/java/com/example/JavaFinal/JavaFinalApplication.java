@@ -7,6 +7,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Scanner;
 
 
@@ -14,7 +15,7 @@ import java.util.Scanner;
 public class JavaFinalApplication {
 
 	//EJERCICIO 1
-	public static class Fecha {
+	public static class Fecha extends Date {
 		private int dia;
 		private int mes;
 		private int anio;
@@ -231,7 +232,7 @@ public class JavaFinalApplication {
 				}
 				break;
 			case 4:
-				Coche masAntiguo = misCoches.mostrarMasAntigua();
+				String masAntiguo = misCoches. mostrarMasAntigua();
 				System.out.println("El coche más antiguo es: " + masAntiguo.toString());
 				break;
 			case 5:
